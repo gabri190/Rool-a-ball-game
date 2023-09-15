@@ -8,13 +8,25 @@ public class MenuController : MonoBehaviour
 {
     public GameObject endPanel;
     // Start is called before the first frame update
+    // Defina o nome do botão que irá reiniciar o jogo na interface Unity
+    
+    void Update()
+    {
+        // Verifica se o botão especificado foi pressionado
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ResetGame();
+        }
+    
+}
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
     }
-    public void QuitGame()
+    public void ResetGame()
     {
-        Application.Quit();
+        SceneManager.LoadSceneAsync(0);
+        
     }
     public void TransitionScene(int level)
     {

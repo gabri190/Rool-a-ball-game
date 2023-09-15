@@ -1255,10 +1255,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   countText: {fileID: 1272891071}
-  countLives: {fileID: 0}
+  countLives: {fileID: 1628627804}
   respawnPoint: {fileID: 1752903308}
   lives: 5
   menuController: {fileID: 976829071}
+  count: 0
 --- !u!82 &974854089
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2014,7 +2015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: -40}
+  m_AnchoredPosition: {x: -120, y: -40}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628627804
