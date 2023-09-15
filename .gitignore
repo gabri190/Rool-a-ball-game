@@ -65,7 +65,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Packed Addressables
-Rool-a-ball/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/Rool-a-ball/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
 /Rool-a-ball/[Aa]ssets/[Ss]treamingAssets/aa.meta
