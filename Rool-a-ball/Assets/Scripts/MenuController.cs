@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
     public GameObject endPanel;
     // Start is called before the first frame update
     // Defina o nome do botão que irá reiniciar o jogo na interface Unity
-    
+
     void Update()
     {
         // Verifica se o botão especificado foi pressionado
@@ -25,13 +25,11 @@ public class MenuController : MonoBehaviour
     }
     public void ResetGame()
     {
-        SceneManager.LoadSceneAsync(0);
-        
+       
+    SceneManager.LoadSceneAsync(0);
+
     }
-    public void TransitionScene(int level)
-    {
-        SceneManager.LoadScene(level);
-    }
+    
     
     public void LoseGame()
     {

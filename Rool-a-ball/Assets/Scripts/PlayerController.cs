@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         // Assign the Rigidbody component to our private rb variable
         rb = GetComponent<Rigidbody>();
 
-        music=GetComponent<AudioSource>();
+        music = GetComponent<AudioSource>();
         // Set the count to zero 
         count = 0;
         lives = 5;
@@ -47,12 +47,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(transform.position.y < -10)
+        if (transform.position.y < -10)
         {
             Respawn();
             lives--;
             SetCountLives();
-            
+
         }
         if (lives <= 0)
         {
@@ -91,14 +91,14 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-           // Respawn();
-           EndGame();
-           count = 0;
-           SetCountText();
-           lives = 0;
-           SetCountLives();
-            
-           menuController.ResetGame();
+            // Respawn();
+            EndGame();
+            count = 0;
+            SetCountText();
+            lives = 0;
+            SetCountLives();
+
+            menuController.ResetGame();
         }
     }
 
@@ -122,13 +122,14 @@ public class PlayerController : MonoBehaviour
             count = 0;
             menuController.ResetGame();
         }
-       
+
     }
 
     void SetCountLives()
     {
         countLives.text = "Lives: " + lives.ToString();
-        if (lives <=0) {
+        if (lives <= 0)
+        {
             menuController.LoseGame();
             lives = 0;
             menuController.ResetGame();
@@ -137,9 +138,9 @@ public class PlayerController : MonoBehaviour
     void Respawn()
     {
         rb.velocity = Vector3.zero;
-        rb.angularVelocity=Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
         rb.Sleep();
-        transform.position=respawnPoint.position;
+        transform.position = respawnPoint.position;
     }
     void EndGame()
     {
