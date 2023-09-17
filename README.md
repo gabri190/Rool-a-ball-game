@@ -10,3 +10,4 @@
 - https://www.youtube.com/watch?v=__wAQOSqIaw&list=PLAt-r11PZmRmaTqYA-JhcGpZretwRxq8z
 - https://www.youtube.com/watch?v=DX7HyN7oJjE&t=14s
 - https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
+- https://www.youtube.com/watch?v=mvaUho_a-q4&t=71s
